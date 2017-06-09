@@ -45,5 +45,6 @@
   "WP8ProductID": "{087cec5a-93e4-4111-9ca6-379aa33d056a}",
   "WP8PackageIdentityName": "1234Telerik.com.telerik.samplebarcodescanner",
   "WP8WindowsPublisherName": "CN=Telerik",
-  "WPSdk": "8.1"
+  "WPSdk": "8.1",
+  "CordovaPluginVariables": {}
 }

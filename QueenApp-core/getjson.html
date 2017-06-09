@@ -4,6 +4,41 @@
  <meta charset="UTF-8">
  <title>Ver Tickets</title>
  <script type="text/javascript" src="jquery.min.js"></script>
+</head>
+<body>
+<h1>Hola Admin </h2>
+<div id="target">
+  elije una funcion
+</div>
+ <div id="output"></div>
+ <h1>funciones disponibles</h1>
+<br>Ver registros por usuario<br>
+Ver historial por fechas<p><br>imprimir Tickets<br>ver cantidad de arboles salvados por usuario<p>
+ 
+<form>
+<select name="users" onchange="showUser(this.value)">
+  <option value="">Selecciona una persona:</option>
+  <option value="1">Peter Griffin</option>
+  <option value="2">Lois Griffin</option>
+  <option value="3">Joseph Swanson</option>
+  <option value="4">Glenn Quagmire</option>
+  </select>
+</form>
+<br>
+<form>
+<select name="users" onchange="verFecha(this.value)">
+  <option value="">Selecciona un Rango De fechas:</option>
+  <option value="5">1 Semana</option>
+  <option value="6">1 mes</option>
+  <option value="7">6 meses</option>
+  </select>
+</form>
+<br>
+<div id="txtHint"><b><h1>Los tickets scaneados deverian mostrarse aqui...</h1></b><br>
+<P><h2>Solo Elije el Rango de Fechas que Deseas Revisar</h2><p><br></div>
+<br><div id="Ticket"><b><h1>Rango de Fechas aca...</h1></b><br>
+<P><h2>Click y esperar cambios</h2><p><br></div>
+<br>
  <script type="text/javascript">
 
 function showUser(str) {
@@ -44,45 +79,10 @@ function verFecha(str) {
                 document.getElementById("Ticket").innerHTML = this.responseText;
             }
         };
-        xmlhttp.open("GET","http://backend.260mb.net/output.php?e="+str,true);
+        xmlhttp.open("GET","http://backend.260mb.net/outputv2.php?e="+str,true);
         xmlhttp.send();
     }
 }
  </script>
-</head>
-<body>
-<h1>Hola Admin </h2>
-<div id="target">
-  elije una funcion
-</div>
- <div id="output"></div>
- <h1>funciones disponibles</h1>
-<br>Ver registros por usuario<br>
-Ver historial por fechas<p><br>imprimir Tickets<br>ver cantidad de arboles salvados por usuario<p>
- 
-<form>
-<select name="users" onchange="showUser(this.value)">
-  <option value="">Selecciona una persona:</option>
-  <option value="1">Peter Griffin</option>
-  <option value="2">Lois Griffin</option>
-  <option value="3">Joseph Swanson</option>
-  <option value="4">Glenn Quagmire</option>
-  </select>
-</form>
-<br>
-<form>
-<select name="users" onchange="verFecha(this.value)">
-  <option value="">Selecciona un Rango De fechas:</option>
-  <option value="5">1 Semana</option>
-  <option value="6">1 mes</option>
-  <option value="7">6 meses</option>
-  </select>
-</form>
-<br>
-<div id="txtHint"><b><h1>Los tickets scaneados deverian mostrarse aqui...</h1></b><br>
-<P><h2>Solo Elije el Rango de Fechas que Deseas Revisar</h2><p><br></div>
-<br><div id="Ticket"><b><h1>Rango de Fechas aca...</h1></b><br>
-<P><h2>Click y esperar cambios</h2><p><br></div>
-<br>
 </body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+nn3<!DOCTYPE html>
 <html>
 
 <head>
@@ -11,9 +11,8 @@
  </head>
 <style>
 #cabecera {
-            margin-top: 0px;
             height: 200px;
-            background-image: url(styles/icon.png);
+            background-image: url(styles/logo.png);
             background-repeat: no-repeat;
             background-position: center;
             background-color: #FFFFFF;
@@ -21,21 +20,13 @@
             -moz-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
             box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
         }
-,ui-btn ui-btn-inline{
-    margin-top:20px;
-}
-#abrir{
-margin-top: 10%;
-}
-body {
-    background-image: 2732x2732.png;
-}
         
         h2 {
             text-align: center;
         }
         
         html,
+        body,
         h1,
         h2,
         h3,
@@ -51,17 +42,16 @@ body {
     <div data-role="panel" id="myPanel">
         <h1>Menu</h1> <br>
         
-        <a href="cargar.html"><button type="button" class="btn btn-info">Ver Tickets</button><br></a>
-        <a href="Transacciones.html"><button type="button" class="btn btn-info">Monedero</button></a>
-        <a href="init.html"><button type="button" class="btn btn-info">Configuracion</button></a>
-        <a href="index.html"><button type="button" class="btn btn-info">Tiendas</button></a>
-        <a href="index.html"><button>Regresar</button></a> </div>
+        <a href="cargar.html"> <br> <button type="button" class="btn btn-info">Ver Tickets</button><br></a>
+        <a href="init.html"> <br> <button type="button" class="btn btn-info">Configuracion</button></a>
+        <a href="#cambiar fondo"> <br> <button type="button" class="btn btn-info">Modo nocturno</button></a>
+        <a href="index.html"> <br> <button type="button" class="btn btn-info">Regresar</button></a> </div>
     <div id="cabecera" data-role="header">
     <data-position="fixed" data-theme="a"></div>
+<br> <a href="#myPanel" class="ui-btn ui-btn-inline">Open Panel</a>
     <div class="subheader">
-        <a href="#myPanel" class="ui-btn ui-btn-inline" id="abrir">Menu</a>
         <div class="row">
-            <div class="col"> <button class="button" id="scanButton">Leer</button> </div>
+            <div class="col"> <button class="button" id="scanButton">Scan</button> </div>
         </div>
     </div>
     <div class="content" id="result"></div> <br> <br> <br> <br>
@@ -73,7 +63,8 @@ body {
     <script type="text/javascript" charset="utf-8" src="scripts/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="scripts/jquery.mobile-1.4.5.min.js"></script>
     <script src="scripts/firebase.js"></script>
-    <div data-role="footer" data-position="fixed" data-theme="b"><p>QueenApp Derechos Reservados - App 0% emisiones Esta Aplicacion no genera CO2 para funcionar<p></div> 
+    <div data-role="footer" data-position="fixed" data-theme="b"><p>QueenApp Derechos Reservados - App 0% emisiones Esta Aplicacion no genera CO2 para funcionar<p>
+    </div>
 </body>
 
 </html>
