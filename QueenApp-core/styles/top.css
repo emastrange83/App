@@ -1,18 +1,7 @@
-nn3<!DOCTYPE html>
-<html>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta charset="utf-8">
-    <link href="styles/theme.css" rel="stylesheet" type="text/css" />
-    <link href="styles/top.css" rel="stylesheet" type="text/css" />
-    <link href="styles/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/jquery.mobile-1.4.5.min.css">
- </head>
-<style>
 #cabecera {
+            margin-top: 0px;
             height: 200px;
-            background-image: url(styles/logo.png);
+            background-image: url(styles/icon.png);
             background-repeat: no-repeat;
             background-position: center;
             background-color: #FFFFFF;
@@ -20,13 +9,14 @@ nn3<!DOCTYPE html>
             -moz-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
             box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
         }
+
+
         
         h2 {
             text-align: center;
         }
         
         html,
-        body,
         h1,
         h2,
         h3,
@@ -36,35 +26,24 @@ nn3<!DOCTYPE html>
             font-family: "Roboto", sans-serif
         }
     }
-</style>
-
-<body>
-    <div data-role="panel" id="myPanel">
-        <h1>Menu</h1> <br>
-        
-        <a href="cargar.html"> <br> <button type="button" class="btn btn-info">Ver Tickets</button><br></a>
-        <a href="init.html"> <br> <button type="button" class="btn btn-info">Configuracion</button></a>
-        <a href="#cambiar fondo"> <br> <button type="button" class="btn btn-info">Modo nocturno</button></a>
-        <a href="index.html"> <br> <button type="button" class="btn btn-info">Regresar</button></a> </div>
-    <div id="cabecera" data-role="header">
-    <data-position="fixed" data-theme="a"></div>
-<br> <a href="#myPanel" class="ui-btn ui-btn-inline">Open Panel</a>
-    <div class="subheader">
-        <div class="row">
-            <div class="col"> <button class="button" id="scanButton">Scan</button> </div>
-        </div>
-    </div>
-    <div class="content" id="result"></div> <br> <br> <br> <br>
-
-    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-    <script type="text/javascript" charset="utf-8" src="scripts/main.js"></script>
-    <script type="text/javascript" charset="utf-8" src="scripts/app.js"></script>
-    <script type="text/javascript" charset="utf-8" src="scripts/bootstrap.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="scripts/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="scripts/jquery.mobile-1.4.5.min.js"></script>
-    <script src="scripts/firebase.js"></script>
-    <div data-role="footer" data-position="fixed" data-theme="b"><p>QueenApp Derechos Reservados - App 0% emisiones Esta Aplicacion no genera CO2 para funcionar<p>
-    </div>
-</body>
-
-</html>
+#control{
+            height: 200px;
+            background-image: url(styles/);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #FFFFFF;
+            -webkit-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
+            -moz-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
+            box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
+            
+}
+#enviarTicket{-webkit-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
+            -moz-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
+            box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);}
+#scanButton{-webkit-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
+            -moz-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
+            box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);}
+#abrir{margin-top:100px;
+    -webkit-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
+            -moz-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
+            box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);}
