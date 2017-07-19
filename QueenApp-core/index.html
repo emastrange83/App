@@ -27,9 +27,6 @@
 #abrir{
 margin-top: 10%;
 }
-body {
-    background-image: 2732x2732.png;
-}
         
         h2 {
             text-align: center;
@@ -45,6 +42,26 @@ body {
             font-family: "Roboto", sans-serif
         }
     }
+#control{
+            height: 200px;
+            background-image: url(styles/);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #FFFFFF;
+            -webkit-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
+            -moz-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
+            box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
+            
+}
+#enviarTicket{-webkit-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
+            -moz-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
+            box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);}
+#scanButton{-webkit-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
+            -moz-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
+            box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);}
+#abrir{-webkit-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
+            -moz-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
+            box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);}
 </style>
 
 <body>
@@ -58,22 +75,25 @@ body {
         <a href="index.html"><button>Regresar</button></a> </div>
     <div id="cabecera" data-role="header">
     <data-position="fixed" data-theme="a"></div>
-    <div class="subheader">
+    <div id="Control">
         <a href="#myPanel" class="ui-btn ui-btn-inline" id="abrir">Menu</a>
         <div class="row">
             <div class="col"> <button class="button" id="scanButton">Leer</button> </div>
-        </div>
+            <div class="col"> <button class="button" id="enviarTicket">Guardar</button> </div>
+            <br>                      
     </div>
+    
     <div class="content" id="result"></div> <br> <br> <br> <br>
 
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8" src="scripts/main.js"></script>
     <script type="text/javascript" charset="utf-8" src="scripts/app.js"></script>
+    <script type="text/javascript" charset="utf-8" src="scripts/back.js"></script>
     <script type="text/javascript" charset="utf-8" src="scripts/bootstrap.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="scripts/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="scripts/jquery.mobile-1.4.5.min.js"></script>
     <script src="scripts/firebase.js"></script>
-    <div data-role="footer" data-position="fixed" data-theme="b"><p>QueenApp Derechos Reservados - App 0% emisiones Esta Aplicacion no genera CO2 para funcionar<p></div> 
+    <div data-role="footer" data-position="center" data-theme="b"><p>QueenApp Derechos Reservados - App 0% emisiones Esta Aplicacion no genera CO2 para funcionar<p></div> 
 </body>
 
 </html>
