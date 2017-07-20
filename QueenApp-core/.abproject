@@ -23,6 +23,7 @@
   "FrameworkVersion": "6.4.0",
   "CorePlugins": [
     "com.phonegap.plugins.barcodescanner@2.0.0",
+    "com.telerik.plugin.telerikanalytics@3.4.1",
     "cordova-plugin-splashscreen",
     "cordova-plugin-whitelist"
   ],
@@ -46,5 +47,11 @@
   "WP8PackageIdentityName": "1234Telerik.com.telerik.samplebarcodescanner",
   "WP8WindowsPublisherName": "CN=Telerik",
   "WPSdk": "8.1",
-  "CordovaPluginVariables": {}
+  "CordovaPluginVariables": {
+    "com.telerik.plugin.telerikanalytics": {
+      "AUTO_TRACK_EXCEPTIONS": "True",
+      "AUTO_TRACK_KENDO_EVENTS": "True",
+      "PRODUCT_ID": "04847d9571b241208894b116a788c0e2"
+    }
+  }
 }

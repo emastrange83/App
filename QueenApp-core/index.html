@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta charset="utf-8">
     <link href="styles/theme.css" rel="stylesheet" type="text/css" />
-    <link href="styles/top.css" rel="stylesheet" type="text/css" />
     <link href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/jquery.mobile-1.4.5.min.css">
+    <link href="styles/top.css" rel="stylesheet" type="text/css" />
  </head>
-<style>
+ <style>
 #cabecera {
             margin-top: 0px;
             height: 200px;
@@ -21,13 +21,7 @@
             -moz-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
             box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
         }
-,ui-btn ui-btn-inline{
-    margin-top:20px;
-}
-#abrir{
-margin-top: 10%;
-}
-        
+
         h2 {
             text-align: center;
         }
@@ -42,33 +36,23 @@ margin-top: 10%;
             font-family: "Roboto", sans-serif
         }
     }
-#control{
-            height: 200px;
-            background-image: url(styles/);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-color: #FFFFFF;
-            -webkit-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
-            -moz-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
-            box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
-            
-}
+
 #enviarTicket{-webkit-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
             -moz-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
             box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);}
 #scanButton{-webkit-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
             -moz-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
             box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);}
-#abrir{-webkit-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
+#abrir{margin-top:100px;
+    -webkit-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
             -moz-box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);
             box-shadow: 10px 10px 7px 0px rgba(8, 7, 8, 0.85);}
 </style>
-
 <body>
-    <div data-role="panel" id="myPanel">
+            <div data-role="panel" id="myPanel">
         <h1>Menu</h1> <br>
-        
-        <a href="cargar.html"><button type="button" class="btn btn-info">Ver Tickets</button><br></a>
+<b>
+        <a href="cargar.html"><button type="button" class="btn btn-info">Ver Tickets</button></a>
         <a href="Transacciones.html"><button type="button" class="btn btn-info">Monedero</button></a>
         <a href="init.html"><button type="button" class="btn btn-info">Configuracion</button></a>
         <a href="index.html"><button type="button" class="btn btn-info">Tiendas</button></a>
@@ -78,8 +62,8 @@ margin-top: 10%;
     <div id="Control">
         <a href="#myPanel" class="ui-btn ui-btn-inline" id="abrir">Menu</a>
         <div class="row">
-            <div class="col"> <button class="button" id="scanButton">Leer</button> </div>
-            <div class="col"> <button class="button" id="enviarTicket">Guardar</button> </div>
+            <div class="col"> <button class="ui-btn ui-btn-inline" id="scanButton">Leer</button> </div>
+            <div class="col"> <button class="ui-btn ui-btn-inline" id="enviarTicket">Guardar</button> </div>
             <br>                      
     </div>
     

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Tickets del dia</title>
+    </head>
+    <body>
+        <br>
+        <br>
+        <br>
+        <h1>Tickets del dia</h1>
+        <br>
+        <br>
+<button id="rows">Click me </button>
+
+<script>
+var rows=document.getElementById("rows");
+rows.addEventListener("click", function() { 
+//Ajax request using jQuery
+$.ajax({
+    url: 'https://api.everlive.com/v1/hcivrqvp7wd55hly/Box',
+    type: "GET",
+    headers: {
+        "Authorization" : "u8t0ht7v5r9075ru8ue5k7vyuhnkgtr4"
+    },
+    success: function(data){
+        alert(JSON.stringify(data));
+    },
+    error: function(error){
+        alert(JSON.stringify(error));
+    }
+}); 
+                                    });
+</script>
+
+
+
+    </body>
+</html>
