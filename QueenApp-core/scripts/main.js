@@ -4,7 +4,6 @@ var result = document.getElementById("result");
 enviarTicket.addEventListener("click",
                                     function() {
                                         var object = { "Ticket" : "Serie:1a|folio:0001|Barritas:$10.00|Frutsi:$5.00|Helado:$15.00|RevistaPorno:$100.00|cigarros:$10.00|botellaVodka:$400.00|chicles:$5.00|Preservativos:90.00|Total:595.00|" };
-
                                         $.ajax({
                                         type: "POST",
                                         url: 'https://api.everlive.com/v1/hcivrqvp7wd55hly/Box',
@@ -81,3 +80,4 @@ document.getElementById("#enviarTicket").addEventListener("click", function(){
             alert(JSON.stringify(error));
 });
         });
+        
