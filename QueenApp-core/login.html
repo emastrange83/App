@@ -2,27 +2,61 @@
 
 <html>
     <head>
-        <title></title>
+        <meta charset="utf-8"/>
+        <title>Iniciar Sesion</title>
     </head>
     <body>
+        <br>
+        <h1>Inicia Sesion Para Continuar</h1>
+        <br>
+        <p>
+            Con QueenApp la concentración de todos tus datos están totalmente seguros desde tu cuenta de usuario, que realizas al descargar tu aplicación.<p>
+                <br>
         <div class="container">
-    <label><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <label><b>Usuario</b></label>
+    <input type="text" placeholder="Introduce Usuario" name="usuario" id="usuario" required>
 
-    <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <label><b>Contraseña</b></label>
+    <input type="password" placeholder="Introduce contraseña segura" name="password" id="password"required>
 
-    <button type="submit">Login</button>
+    <button type="submit" id="logmein">Iniciar sesion</button>
     <br>
-    <input type="checkbox" checked="checked"> Remember me
-  </div>
+ <a href="registrar.html"><button type="button" class="cancelbtn">Cancelar</button></a>
+    <br>
+    <input type="checkbox" checked="checked"><br>Recordarme
+  </div><br>
 
   <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <br>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-  <script type="text/javascript" charset="utf-8" src="scripts/login.js"></script>
+   
+    <span class="psw">Olvidaste <a href="#">Contraseña?</a></span>
+</div>
+<script>
+var logmein=document.getElementById("logmein");
+var usuario=document.getElementById("usuario");
+var password=document.getElementById("password");
+logmein.addEventListener("click", function() { 
+//Ajax request using jQuery
+var usuario=document.getElementById("usuario");
+var password=document.getElementById("password");
+var everlive = new Everlive({
+    appId: "hcivrqvp7wd55hly",
+    scheme: "https"
+});
+
+var username = $(usuario).val();
+var password = $(password).val();
+
+everlive.authentication.login(username, password, function(data) {
+    var accessToken = data.result.access_token;
+    alert("Iniciaste correctamente sesion tanto que te regalan un token: " + accessToken);
+}, function(err) {
+    alert("Unfortunately an error occurred: " + err.message);
+});
+                                    });
+			$( "#logmein" ).on( "click", function() {
+			setTimeout("location.href='index.html'", 3000);
+			});
+</script>
 <script src="https://bs-static.cdn.telerik.com/1.9.4/everlive.all.min.js">
 <script type="text/javascript" charset="utf-8" src="scripts/jquery-1.11.3.min.js"></script>
     </body>
